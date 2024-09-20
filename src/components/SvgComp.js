@@ -2,7 +2,7 @@ import React from 'react';
 import {Pressable, Text, View} from 'react-native';
 import { Svg,G, Path, Defs, Mask, Rect } from 'react-native-svg';
 
-function SvgComp() {
+function SvgComp({setup}) {
   return (
     <>
     <View className='h-full w-full p-2'>
@@ -368,7 +368,7 @@ function SvgComp() {
           </Mask>
         </Defs>
       </Svg>
-      <Pressable className="h-1/5 w-4/5 rounded-xl mx-auto justify-center items-center bg-indigo-600">
+      <Pressable onPress={setup} className="h-1/5 w-4/5 rounded-xl mx-auto justify-center items-center bg-indigo-600">
         <Text className="text-4xl font-bold text-white">Start</Text>
       </Pressable>
       

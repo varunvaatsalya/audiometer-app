@@ -1,10 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {
-  Pressable,
-  StatusBar,
-  Text,
-  View,
-} from 'react-native';
+import {Pressable, StatusBar, Text, View} from 'react-native';
 import SvgComp from '../components/SvgComp';
 import Chart from '../components/Chart';
 import {addTrack, setUpPlayer} from '../../playBackService';
@@ -18,7 +13,7 @@ import {
 import {SafeAreaView} from 'react-native-safe-area-context';
 import TrackPlayer from 'react-native-track-player';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   const [isPlayerReady, setIsPlayerReady] = useState(false);
   const [showGraph, setShowGraph] = useState(false);
   const [lineArray, setLineArray] = useState(new Array(5).fill(0));
@@ -51,12 +46,8 @@ const HomeScreen = () => {
     }
   };
 
-  useEffect(() => {
-    setup();
-  }, []);
 
-  useEffect(() => {
-  }, [decibel,freqIndex]);
+  useEffect(() => {}, [decibel, freqIndex]);
   useEffect(() => {
     trackAdd();
   }, [freqIndex]);
@@ -97,6 +88,12 @@ const HomeScreen = () => {
     updateLineArray();
     await TrackPlayer.stop();
     await TrackPlayer.reset();
+    if (freqIndex === 4 && rightEarTurn) {
+      navigation.navigate('Results', {
+        lineArray,
+        lineArray2,
+      });
+    }
     if (freqIndex == lineArray.length - 1) setRightEarTurn(!rightEarTurn);
     setFreqIndex((freqIndex + 1) % frequencyDataList.length);
   };
@@ -149,7 +146,7 @@ const HomeScreen = () => {
               updateChart={updateChart}
             />
           ) : (
-            <SvgComp />
+            <SvgComp setup={setup} />
           )}
         </View>
         <View className="h-[30%] w-full">
