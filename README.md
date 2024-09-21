@@ -42,12 +42,12 @@ The audiometer in the app also allows users to test both ears separately. You ca
 
 Here are examples of the frequency tests:
 
-- **Left Ear Sample at 500 Hz**:
+- **Left Ear Sample at 1000 Hz**:
   <p align="center">
     <img src="public/l1000.png" alt="home Page" width="150"/>
 </p>
 
-- **Right Ear Sample at 1000 Hz**:
+- **Right Ear Sample at 800 Hz**:
   <p align="center">
     <img src="public/r800.png" alt="home Page" width="150"/>
 </p>
