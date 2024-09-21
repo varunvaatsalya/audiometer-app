@@ -50,7 +50,7 @@ const Results = ({navigation}) => {
     <>
       <StatusBar backgroundColor={'rgb(100 116 152);'} />
       <View className="bg-slate-500 py-1 h-full w-full">
-        <View className="h-1/2 w-full bg-red-400">
+        <View className="h-1/2 w-full">
           <Text className="text-center text-4xl font-bold m-6">Results</Text>
           <View className="flex flex-col justify-center items-center">
             <View className="flex flex-row h-10 items-center mx-auto">
@@ -87,7 +87,7 @@ const Results = ({navigation}) => {
             ))}
           </View>
         </View>
-        <View className="h-1/2 w-full bg-green-400 flex justify-center items-center">
+        <View className="h-1/2 w-full flex justify-center items-center">
           <View className="flex flex-row h-16 items-center justify-center mx-auto">
             <View className="h-full w-2/5 bg-pink-400  border-y justify-center">
               <Text className="text-lg font-bold text-center">

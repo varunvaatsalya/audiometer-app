@@ -1,8 +1,79 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Digital Audiometer - React Native Version
+
+This project is a mobile app-based digital audiometry platform developed as part of **SIH 2023**, designed for users to assess their hearing through an interactive mobile experience.
+
+### Table of Contents
+
+- [How to Use](#how-to-use)
+- [Audiometer Functionality](#audiometer-functionality)
+- [Left and Right Ear Frequency Testing](#left-and-right-ear-frequency-testing)
+- [Results](#results)
+- [Web Version](#web-version)
+
+## Web Version
+
+For desktop users, check out the [Web Version of this project](https://github.com/varunvaatsalya/Digital-Audimeter):
+
+<p align="center">
+  <a href="https://github.com/varunvaatsalya/Digital-Audimeter">
+    <img src="public/web-instruction.png" alt="Web Version" width="400"/>
+  </a>
+</p>
+
+## How to Use
+
+On the first page, users will receive instructions on how to use the audiometry app effectively.
+
+<p align="center">
+    <img src="public/instruction.png" alt="Instruction Page" width="150"/>
+</p>
+
+## Audiometer Functionality
+
+The second page offers a step-by-step hearing test, where users input their responses to varying audio frequencies and intensities.
+
+<p align="center">
+    <img src="public/audiometer.png" alt="home Page" width="150"/>
+</p>
+
+## Left and Right Ear Frequency Testing
+
+The audiometer in the app also allows users to test both ears separately. You can hear sound samples at different frequencies for the left and right ear, ensuring a thorough hearing assessment.
+
+Here are examples of the frequency tests:
+
+- **Left Ear Sample at 500 Hz**:
+  <p align="center">
+    <img src="public/l1000.png" alt="home Page" width="150"/>
+</p>
+
+- **Right Ear Sample at 1000 Hz**:
+  <p align="center">
+    <img src="public/r800.png" alt="home Page" width="150"/>
+</p>
+
+This functionality helps detect hearing differences between ears at different pitches.
+
+## Results
+
+After completing the test, an audiogram is generated, showing the user's hearing sensitivity across a range of frequencies.
+
+<p align="center">
+    <img src="public/result.png" alt="home Page" width="150"/>
+</p>
+
+## React Web Version
+
+Check out the [React Web Version of this project](https://github.com/varunvaatsalya/digital-audiometer) for Desktop or Web users.
+
+
+### About the project's tech stack
+
+This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
@@ -59,21 +130,3 @@ Now that you have successfully run the app, let's modify it.
 
 You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
